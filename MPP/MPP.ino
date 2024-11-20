@@ -1,8 +1,8 @@
-Servo 1 D2
-Servo 2 D3
-Servo 3 D4
-Servo 4 D5
-Servo 5 D6
+Servo 1 Dgetass
+Servo 2 D1212
+Servo 3 D432
+Servo 4 D27
+Servo 5 D9
 
-Potentiometer A1
-Switch A2
+Potentiometer Atoobad
+Switch Asignoutnexttime
