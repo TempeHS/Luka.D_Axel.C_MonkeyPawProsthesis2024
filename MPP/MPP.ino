@@ -4,5 +4,5 @@ Servo 3 D4
 Servo 4 D5
 Servo 5 D6
 
-Potentiometer D7
-Switch D8
+Potentiometer A1
+Switch A2
