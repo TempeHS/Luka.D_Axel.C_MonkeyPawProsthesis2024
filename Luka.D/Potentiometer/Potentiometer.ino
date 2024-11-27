@@ -6,23 +6,22 @@
   Source: https://wiki.seeedstudio.com/Grove-Rotary_Angle_Sensor/
 */
 
-static unsigned int potPIN = A0;
+static unsigned int potPIN = A3;
 static unsigned int LEDpin = 3;
 
 
 void setup()
 {
     Serial.begin(9600);
-    pinMode(potPIN, INPUT); 
     pinMode(LEDpin, OUTPUT);
 }
 
 void loop()
 {   
-  Serial.println(analogRead(potPIN));
-  int val = analogread(potPIN);
-  val = map(val, 0, 255, 0, 1023);
-  LEDpin.write val;
+  Serial.println(analogRead(A3));
+  int val = analogRead(A3);
+  val = map(val, 0, 1023, 0, 255);
+  analogWrite (LEDpin, val);
 
 }
 
