@@ -29,18 +29,31 @@ void setup()
   Serial.print("Debug");
   servosetup();
   potentiometersetup();
-   pinMode(LEDpin, OUTPUT);
   switchsetup();
-  pinMode(btnPin, INPUT);
+ 
 }
 
 
 void loop()
 {
   Serial.println(analogRead(A3));
-  int val = analogRead(A3);
-  val = map(val, 0, 1023, 0, 180);
-  analogWrite (LEDpin, val);
+  int val1 = analogRead(potpin);
+  val1 = map(val1, 0, 1023, 0, 180);
 
-  LEDpin = digitalRead(btnPin);
+  Serial.println(digitalRead(btnpin));
+  int val2 = digitalRead(btnpin);
+
+  if (val2 == 0)
+  {
+  servo1.write (val1);
+  servo2.write (val1);
+  servo3.write (val1);
+  servo4.write (val1);
+  servo5.write (val1);
+
+  }
+
+ 
 }
+
+

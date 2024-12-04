@@ -18,13 +18,13 @@ void servosetup()
 
 void switchsetup()
 {
-
+  pinMode(btnpin, INPUT);
 
 }
 
 
 void potentiometersetup()
 {
-
+  pinMode(potpin, INPUT);
   
 }
