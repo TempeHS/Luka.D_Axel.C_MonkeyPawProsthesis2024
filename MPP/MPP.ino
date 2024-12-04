@@ -38,6 +38,6 @@ void loop()
 {
   Serial.println(analogRead(A3));
   int val = analogRead(A3);
-  val = map(val, 0, 1023, 0, 255);
+  val = map(val, 0, 1023, 0, 180);
   analogWrite (LEDpin, val);
 }
