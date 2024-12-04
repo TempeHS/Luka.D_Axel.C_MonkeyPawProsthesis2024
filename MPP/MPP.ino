@@ -31,6 +31,7 @@ void setup()
   potentiometersetup();
    pinMode(LEDpin, OUTPUT);
   switchsetup();
+  pinMode(btnPin, INPUT);
 }
 
 
@@ -40,4 +41,6 @@ void loop()
   int val = analogRead(A3);
   val = map(val, 0, 1023, 0, 180);
   analogWrite (LEDpin, val);
+
+  LEDpin = digitalRead(btnPin);
 }
