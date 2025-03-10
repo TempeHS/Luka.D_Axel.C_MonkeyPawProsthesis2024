@@ -40,20 +40,49 @@ void loop()
   int val1 = analogRead(potpin);
   val1 = map(val1, 0, 1023, 0, 180);
 
+<<<<<<< HEAD
   int val3 = val1/2;
+=======
+
+  int val4 = analogRead(potpin);
+  val4 = map(val4, 0, 1023, 1023, 0);
+
+  val4 = map(val4, 1023, 0, 180, 0);
+
+>>>>>>> 40fe5390189f47a09ac919b9407cf8df753776e8
 
   Serial.println(digitalRead(btnpin));
   int val2 = digitalRead(btnpin);
 
+<<<<<<< HEAD
+=======
+  int servo1val = (val1 + 40);
+
+  int servo2val = (val1 - 20);
+
+  int servo3val = (val4 - 20);
+
+  int servo5val = (val4);
+  
+
+  
+>>>>>>> 40fe5390189f47a09ac919b9407cf8df753776e8
 
   if (val2 == 0)
   {
-  servo1.write (val1);
-  servo2.write (val1);
-  servo3.write (val1);
-  servo4.write (val1);
-  servo5.write (val1);
+  servo1.write (servo1val);
+  
+  servo2.write (servo2val);
 
+  servo3.write (servo3val);
+  
+  servo5.write (servo5val - 10);
+  
+
+
+  /*
+  servo4.write (val1);
+  */
   }
 
  
