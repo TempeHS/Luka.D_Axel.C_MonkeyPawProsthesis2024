@@ -35,6 +35,7 @@ void setup()
 
 void loop()
 {
+  /*
   servo1.write(90);
   servo2.write(90);
   servo3.write(90);
@@ -43,11 +44,15 @@ void loop()
 
   delay(2000);
 
-  servo1.write(180);
-  servo2.write(180);
-  servo3.write(180);
-  servo4.write(180);
-  servo5.write(180);
+*/
+
+
+
+  servo1.write(170);
+  servo2.write(160);
+  servo3.write(90);
+  servo4.write(166);
+  servo5.write(35);
 
   delay(2000);
 

@@ -40,8 +40,11 @@ void loop()
   int val1 = analogRead(potpin);
   val1 = map(val1, 0, 1023, 0, 180);
 
+  int val3 = val1/2;
+
   Serial.println(digitalRead(btnpin));
   int val2 = digitalRead(btnpin);
+
 
   if (val2 == 0)
   {
